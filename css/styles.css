@@ -1619,8 +1619,12 @@ footer {
     padding-bottom: 12px;
 }
 
-.footer-wrapper div ul li a {
+.footer-wrapper div ul li a, .footer-wrapper div p a {
     color: #fff;
+}
+
+.footer-wrapper div ul li a:hover, .footer-wrapper div p a:hover {
+    text-decoration: none;
 }
 
 .footer-wrapper div p {
