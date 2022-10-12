@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <!-- Column One -->
+        <div id="column-one">
+            <!-- Logo -->
+            <figure id="logo"><a href="index.html"><img src="img/logo-a.png" width="60" height="36" alt="Logo"></a></figure>
+            <!-- Logo on Scroll -->
+            <figure id="logo2"><a href="index.html"><img src="img/logo-b.png" width="60" height="36" alt="Logo"></a></figure>
+
+            <!-- Site Title -->
+            <a href="index.html"><h1 id="site-title">OnePage</h1></a>
+        </div>
+
+        <!-- Column Two -->
+        <div id="column-two">
+            <!-- Desktop Menu Nav -->
+            <nav id="desktop-menu">
+                <!-- Menu Items -->
+                <ul id="menu-items">
+                    <li class="item-list home active"><a href="#home">HOME</a></li>
+                    <li class="item-list about"><a href="#about">ABOUT</a></li>
+                    <li class="item-list services"><a href="#services">SERVICES</a></li>
+                    <li class="item-list products"><a href="#products">PRODUCTS</a></li>
+                    <li class="item-list team"><a href="#testimonial">TESTIMONIAL</a></li>
+                    <li class="item-list testimonial"><a href="#team">TEAM</a></li>
+                    <li class="item-list contact"><a href="#contact">CONTACT US</a></li>
+                </ul>
+                <!-- Social Icons -->
+                <ul id="social-icons">
+                    <li class="social-icon"><a href="https://www.facebook.com/davenof/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="social-icon"><a href="https://twitter.com/davenof" target="_blank" title="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-icon"><a href="https://www.linkedin.com/in/david-ofili-7b9a752a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </nav>   
+        </div>
+    </header>
+    <!-- Mobile Nav Menu -->
+    <nav id="mobilenav">
+        <div class="menu-wrapper">
+            <div class="menu-items" id="mobile-menuitems">
+                <a href="#home" class="active-mobilemenu">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#products">Products</a>
+                <a href="#testimonial">Testimonial</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <!-- Hamburger Menu -->
+            <a href="javascript:void(0);" class="icon" onclick="mobileNavFunction()">
+                <i class="fa fa-bars"></i> <br>
+                <span>MENU</span>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section class="slider-section" id="home">
+            <div class="slider-container">
+                <!-- Slider -->
+                <figure class="slider-image fade" id="slider-one">
+                    <img src="img/slider-a.jpg" width="1600" height="700" alt="Slider Image One">
+                    <figcaption class="slider-caption">
+                        <div class="text">
+                            <span class="goudy-old">Simple and Clean</span>
+                            <h2 class="slide-up">An Easy-to-Adapt Template</h2>
+                            <span class="goudy-old text-three">It has the basic one-page website features</span>
+                            <div class="buttons">
+                                <button class="read-more" onclick="window.location.href='#about';">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon-right arrow"></span>
+                                    </span>
+                                    <span class="button-text">READ MORE</span>
+                                </button> 
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="slider-image fade" id="slider-two">
+                    <img src="img/slider-b.jpg" width="1600" height="700" alt="Slider Image Two">
+                    <figcaption class="slider-caption">
+                        <div class="text">
+                            <span class="goudy-old">Nice and Professional</span>
+                            <h2 class="slide-up">Fine Blend of Usability and Beauty</h2>
+                            <span class="goudy-old text-three">Your business will thank you forever</span>
+                            <div class="buttons">
+                                <button class="read-more">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon-right arrow"></span>
+                                    </span>
+                                    <span class="button-text">READ MORE</span>
+                                </button> 
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="slider-image fade" id="slider-three">
+                    <img src="img/slider-c.jpg" width="1600" height="700" alt="Slider Image Three">
+                    <figcaption class="slider-caption">
+                        <div class="text">
+                            <span class="goudy-old">Smooth and Adaptable</span>
+                            <h2 class="slide-up">Accessible, Usable, and Inclusive</h2>
+                            <span class="goudy-old text-three">Built to enhance the experience of your customers</span>
+                            <div class="buttons">
+                                <button class="read-more">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon-right arrow"></span>
+                                    </span>
+                                    <span class="button-text">READ MORE</span>
+                                </button> 
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                 <!-- Next and Previous Buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Navigational Dots -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <!-- Main Content Area -->
+        <div class="content-area" id="content-area">
+            <!-- About Section -->
+            <section id="about">
+                <span class="pretitle">Our Mission</span>
+                <h2>Who We Are</h2>
+                <p>
+                    OnePage is a fictitious company. The name OnePage was derived from the single page layout of this project.
+                    If there is any company or organisation that the name or logo of this project resembles in any form, it is totally a 
+                    coincidence. This project is neither affiliated with any business venture, nor is it commercial. It is strictly 
+                    a personal practice project. 
+                </p>
+            </section>
+            <!-- End -->
+
+            <!-- Services -->
+            <section id="services">
+                <span class="pretitle">Our Services</span>
+                <h2>What We Offer</h2>
+                <div class="services-flex">
+                    <article id="accessibility">
+                        <i class="fa-regular fa-eye-slash green-icon" id="greenicon1"></i>
+                        <h3 id="greenheading1">Accessibility</h3>
+                        <p>
+                            We design websites that address discriminatory aspects related to equivalent user 
+                            experience for people with disabilities. <br>
+                            <button class="morebtn" id="greenbutton1" onmouseover="morebtnOneOver()" onmouseout="morebtnOneOut()">
+                                <span class="morebtn-text greenhover">Learn More</span>
+                                <i class="fa-solid fa-arrow-right-long greenhover"></i>
+                            </button>
+                        </p>
+                    </article>
+                    <article id="usability">
+                        <i class="fa-solid fa-user-check red-icon" id="redicon1"></i>
+                        <h3 id="redheading1">Usability</h3>
+                        <p>
+                            Our products are designed to be effective, efficient, and satisfying, and proportionally 
+                            impact people with disabilities. <br>
+                            <button class="morebtn" id="redbutton1" onmouseover="morebtnTwoOver()" onmouseout="morebtnTwoOut()">
+                                <span class="morebtn-text redhover">Learn More</span>
+                                <i class="fa-solid fa-arrow-right-long redhover"></i>
+                            </button>
+                        </p>
+                    </article>
+                    <article id="inclusion">
+                        <i class="fa-solid fa-people-group green-icon" id="greenicon2"></i>
+                        <h3 id="greenheading2">Inclusion</h3>
+                        <p>
+                            Our designs are marked by diversity. We ensure the involvement of everyone to the greatest 
+                            extent possible. <br>
+                            <button class="morebtn" id="greenbutton2" onmouseover="morebtnThreeOver()" onmouseout="morebtnThreeOut()">
+                                <span class="morebtn-text greenhover">Learn More</span>
+                                <i class="fa-solid fa-arrow-right-long greenhover"></i>
+                            </button>
+                        </p>
+                    </article>
+                    <article id="responsive">
+                        <i class="fa-solid fa-computer red-icon" id="redicon2"></i>
+                        <h3 id="redheading2">Responsive</h3>
+                        <p>
+                            Our web pages look great on all devices, irrespective of the device's screen size — phone, 
+                            tablet, laptop, desktop, TV, etc. <br>
+                            <button class="morebtn" id="redbutton2" onmouseover="morebtnFourOver()" onmouseout="morebtnFourOut()">
+                                <span class="morebtn-text redhover">Learn More</span>
+                                <i class="fa-solid fa-arrow-right-long redhover"></i>
+                            </button>
+                        </p>
+                    </article>
+                    <article id="experience">
+                        <i class="fa-regular fa-face-smile green-icon" id="greenicon3"></i>
+                        <h3 id="greenheading3">User Experience</h3>
+                        <p>
+                            Our designs are aimed at giving website users meaningful and relevant experiences while 
+                            interacting with our products. <br>
+                            <button class="morebtn" id="greenbutton3" onmouseover="morebtnFiveOver()" onmouseout="morebtnFiveOut()">
+                                <span class="morebtn-text greenhover">Learn More</span>
+                                <i class="fa-solid fa-arrow-right-long greenhover"></i>
+                            </button>
+                        </p>
+                    </article>
+                    <article id="user-centric">
+                        <i class="fa-solid fa-users-rays red-icon" id="redicon3"></i>
+                        <h3 id="redheading3">User-Centred</h3>
+                        <p>
+                            We focus on users' needs and values in each phase of our design process. We involve real life 
+                            users while designing. <br>
+                            <button class="morebtn" id="redbutton3" onmouseover="morebtnSixOver()" onmouseout="morebtnSixOut()">
+                                <span class="morebtn-text redhover">Learn More</span>
+                                <i class="fa-solid fa-arrow-right-long redhover"></i>
+                            </button>
+                        </p>
+                    </article>
+                </div>
+
+                <!-- Services Bottom -->
+                <section class="services-bottom">
+                    <div class="section-flex">
+                        <h4>Enjoy unlimited features with OnePage</h4>
+                        <p>Want It Built To Your Spec?</p>
+                        <div class="buttons">
+                            <button class="read-more" onclick="window.location.href='#contact';">
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon-right arrow"></span>
+                                </span>
+                                <span class="button-text">REACH OUT</span>
+                            </button> 
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services Specifics -->
+                <section class="services-specifics">
+                    <div class="section-grid">
+                        <figure>
+                            <img src="img/responsive.jpg" width="474" height="320" alt="Onepage Website Responsive Image">
+                        </figure>
+                        <div>
+                            <h3>What We Do</h3>
+                            <p>
+                                We have specific services which create a clear picture of our expertise and efficiency, as well as 
+                                the effectiveness of our products. With over four decades of industry excellence, we have been tested, 
+                                and are trusted.
+                            </p>
+                            <h4>Specifics</h4>
+                            <div class="inner-grid">
+                                <ul id="list-one">
+                                    <li><i class="fa-solid fa-check primary"></i></li>
+                                    <li><i class="fa-solid fa-check primary"></i></li>
+                                    <li><i class="fa-solid fa-check primary"></i></li>
+                                    <li><i class="fa-solid fa-check primary"></i></li>
+                                </ul>
+                                <ul>
+                                    <li><i class="fa-solid fa-check secondary"></i>Creative Design and Management</li>
+                                    <li><i class="fa-solid fa-check secondary"></i>User-centred and Participatory Design</li>
+                                    <li><i class="fa-solid fa-check secondary"></i>Hand-coded Web Design and Development</li>
+                                    <li><i class="fa-solid fa-check secondary"></i>Content Management Systems Customisation</li>
+                                </ul>
+                                <ul id="list-three">
+                                    <li><i class="fa-solid fa-check primary"></i></li>
+                                    <li><i class="fa-solid fa-check primary"></i></li>
+                                    <li><i class="fa-solid fa-check primary"></i></li>
+                                    <li><i class="fa-solid fa-check primary"></i></li>
+                                </ul>
+                                <ul>
+                                    <li><i class="fa-solid fa-check secondary"></i>Usability Testing and Heuristic Analysis</li>
+                                    <li><i class="fa-solid fa-check secondary"></i>Search Engine Optimisation</li>
+                                    <li><i class="fa-solid fa-check secondary"></i>Digital Marketing</li>
+                                    <li><i class="fa-solid fa-check secondary"></i>Web and Digital Analytics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- Ends -->
+
+            <!-- Products -->
+            <section id="products">
+                <div class="products">
+                    <span class="pretitle">What You Get</span>
+                    <h2>Products</h2>
+                    <div class="products-flex">
+                        <article>
+                            <div class="top" id="top1"></div>
+                            <div class="circle" id="circle1"><i class="fa-solid fa-book" id="icon"></i></div>
+                            <div class="products-content">
+                                <h3>Heuristic Design</h3>
+                                <p>
+                                    We use design principles and industry best practices to give you and your users great website experience.
+                                </p>
+                                <button class="morebtn" onmouseover="morebtnSevenOver()" onmouseout="morebtnSevenOut()">
+                                    <span class="morebtn-text redhover">READ MORE</span>
+                                    <i class="fa-solid fa-arrow-right-long redhover"></i>
+                                </button>
+                            </div>
+                        </article>  
+                        <article>
+                            <div class="top middle" id="top2"></div>
+                            <div class="circle" id="circle2"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <div class="products-content">
+                                <h3>Bespoke</h3>
+                                <p>
+                                    We engage expertise to give you a website that you have total control over the structure, style, and behaviour.
+                                </p>
+                                <button class="morebtn" onmouseover="morebtnEightOver()" onmouseout="morebtnEightOut()">
+                                    <span class="morebtn-text redhover">READ MORE</span>
+                                    <i class="fa-solid fa-arrow-right-long redhover"></i>
+                                </button>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="top" id="top3"></div>
+                            <div class="circle" id="circle3"><i class="fa-solid fa-gear"></i></div>
+                            <div class="products-content">
+                                <h3>CMS Bespoke</h3>
+                                <p>
+                                    We professionally customise any content management system of your choice in line with your specifications.
+                                </p>
+                                <button class="morebtn" onmouseover="morebtnNineOver()" onmouseout="morebtnNineOut()">
+                                    <span class="morebtn-text redhover">READ MORE</span>
+                                    <i class="fa-solid fa-arrow-right-long redhover"></i>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Pricing -->
+                <div class="pricing">
+                    <h3 id="pricing-heading">Pricing</h3>
+                    <div class="pricing-flex">
+                        <article>
+                            <div class="pricing-content">
+                                <h4>Heuristic Design</h4>
+                                <hr>
+                                <p class="price">
+                                    £269.99 <br>
+                                    <span class="hidden-charges">No hidden charges</span>
+                                </p>
+                                <p class="remark">
+                                    Leave it to us. We know what's befitting.
+                                </p>
+                                <hr>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Free Cancellation - 7 days</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Free Custom Email - 200</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Free Hosting - 1year</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Support Forum</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Unlimited Bandwidth</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Unlimited Support</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Web Analytics</li>
+                                </ul>
+                                <div class="pricing-buttons">
+                                    <button class="pricin-readmore">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon-right arrow"></span>
+                                        </span>
+                                        <span class="button-text">ORDER NOW</span>
+                                    </button> 
+                                </div>
+                            </div>
+                        </article>  
+                        <article id="pricing-middle">
+                            <div class="pricing-content">
+                                <h4>Bespoke</h4>
+                                <hr>
+                                <p class="price">
+                                    £299.99 <br>
+                                    <span class="hidden-charges">No hidden charges</span>
+                                </p>
+                                <p class="remark">
+                                    Get it just like you want it.
+                                </p>
+                                <hr>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Free Cancellation - 7 days</li>
+                                    <li><i class="fa-solid fa-xmark"></i> &nbsp;Free Custom Email - 300</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Free Hosting - 1year</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Support Forum</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Unlimited Bandwidth</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Unlimited Support</li>
+                                    <li><i class="fa-solid fa-xmark"></i> &nbsp;Web Analytics</li>
+                                </ul>
+                                <div class="pricing-buttons">
+                                    <button class="pricin-readmore">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon-right arrow"></span>
+                                        </span>
+                                        <span class="button-text">ORDER NOW</span>
+                                    </button> 
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="pricing-content">
+                                <h4>CMS Bespoke</h4>
+                                <hr>
+                                <p class="price">
+                                    £245.99 <br>
+                                    <span class="hidden-charges">No hidden charges</span>
+                                </p>
+                                <p class="remark">
+                                    We tweak them like no one else does. 
+                                </p>
+                                <hr>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Free Cancellation - 3 days</li>
+                                    <li><i class="fa-solid fa-xmark"></i> &nbsp;Free Custom Email - 200</li>
+                                    <li><i class="fa-solid fa-xmark"></i> &nbsp;Free Hosting - 1year</li>
+                                    <li><i class="fa-solid fa-check"></i> &nbsp;Support Forum</li>
+                                    <li><i class="fa-solid fa-xmark"></i> &nbsp;Unlimited Bandwidth</li>
+                                    <li><i class="fa-solid fa-xmark"></i> &nbsp;Unlimited Support</li>
+                                    <li><i class="fa-solid fa-xmark"></i> &nbsp;Web Analytics</li>
+                                </ul>
+                                <div class="pricing-buttons">
+                                    <button class="pricing-readmore">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon-right arrow"></span>
+                                        </span>
+                                        <span class="button-text">ORDER NOW</span>
+                                    </button> 
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Ends -->
+
+            <!-- Testimonial -->
+            <section id="testimonial">
+                <div class="overlay">
+                    <span class="pretitle">What Happy Clients Say</span>
+                    <h2>TESTIMONIAL</h2>
+                    <div class="testimonial-container">
+                        <div class="testimonial" id="testimonial-one">
+                            <span class="testimony">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type 
+                                specimen book. It has survived not only five centuries, but also the leap into 
+                                electronic typesetting, remaining essentially unchanged.
+                            </span>
+                            <div class="client">
+                                <p class="client-name">HUGHES MAINSBURY</p>
+                                <p class="client-office">C.E.O Market Bank</p>
+                            </div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star">
+                                </i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial" id="testimonial-two">
+                            <span class="testimony">
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
+                                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de 
+                                tal manera que logró hacer un libro de textos especimen.
+                            </span>
+                            <div class="client">
+                                <p class="client-name">WALES CONAKRY</p>
+                                <p class="client-office">Brand Manager, Oil Waters Tech</p>
+                            </div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star">
+                                </i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial" id="testimonial-three">
+                            <span class="testimony">
+                                Lorem Ipsum bụ naanị ederede nke ụlọ ọrụ mbipụta na ụdị mbipụta. Lorem Ipsum abụrụla akwụkwọ ederede 
+                                ọkọlọtọ ụlọ ọrụ kemgbe afọ 1500, mgbe onye nbipute amaghi ama were ụdị ụgbọ mmiri wee chịkọta ya iji 
+                                mepụta akwụkwọ nlere anya. Ọ dịlarị ọ bụghị naanị narị afọ ise, kamakwa ọbịbịa n'ime ụdị elektrọnik, 
+                                na-agbanwe agbanwebeghị.
+                            </span>
+                            <div class="client">
+                                <p class="client-name">ADAM OFOSUTI</p>
+                                <p class="client-office">Principal Designer, LMNOP</p>
+                            </div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star">
+                                </i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Ends -->
+
+            <!-- Team -->
+            <section id="team">
+                <span class="pretitle">The Thought Leaders</span>
+                <h2>Our Team</h2>
+                <div class="team-flex"> 
+                    <figure>
+                        <span>
+                            <span class="overlay-icons">
+                                <i class="fa-brands fa-linkedin-in each-icon" id="linkedin1"></i>
+                                <i class="fa-brands fa-facebook-f each-icon" id="facebook1"></i>
+                                <i class="fa-brands fa-twitter each-icon"></i>
+                            </span>
+                            <img src="img/jane.jpg" width="300" height="350" alt="Jane Doe - Director of Operations"><br>
+                        </span>
+                        <figcaption>
+                            <span class="name">JANE DOE</span> <br>
+                            <span class="office">Director of Operations</span> <br>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <span>
+                            <span class="overlay-icons">
+                                <i class="fa-brands fa-linkedin-in each-icon" id="linkedin2"></i>
+                                <i class="fa-brands fa-facebook-f each-icon" id="facebook2"></i>
+                                <i class="fa-brands fa-twitter each-icon"></i>
+                            </span>
+                            <img src="img/jackson.jpg" width="300" height="350" alt="Jane Doe - Director of Operations"><br>
+                        </span>
+                        <figcaption>
+                            <span class="name">JACKSON DOE</span> <br>
+                            <span class="office">Director of Design</span>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <span>
+                            <span class="overlay-icons">
+                                <i class="fa-brands fa-linkedin-in each-icon" id="linkedin3"></i>
+                                <i class="fa-brands fa-facebook-f each-icon" id="facebook3"></i>
+                                <i class="fa-brands fa-twitter each-icon"></i>
+                            </span>
+                            <img src="img/john.jpg" width="300" height="350" alt="Jane Doe - Director of Operations"><br>
+                        </span>
+                        <figcaption>
+                            <span class="name">JOHN DOE</span> <br>
+                            <span class="office">Director of Research</span>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <span>
+                            <span class="overlay-icons">
+                                <i class="fa-brands fa-linkedin-in each-icon" id="linkedin4"></i>
+                                <i class="fa-brands fa-facebook-f each-icon" id="facebook4"></i>
+                                <i class="fa-brands fa-twitter each-icon"></i>
+                            </span>
+                            <img src="img/janet.jpg" width="300" height="350" alt="Jane Doe - Director of Operations"><br>
+                        </span>
+                        <figcaption>
+                            <span class="name">JANET DOE</span> <br>
+                            <span class="office">Director of Development</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Contact Us -->
+            <section id="contact">
+                <h2 id="no-display">Contact Us</h2> <!--Compulsory section heading. But won't display on browser-->
+                <!-- Top Green Area -->
+                <div class="contact-greenbg">
+                    <p>Our customer-friendly advisors are available 24/7. What are you waiting for?</p>
+                    <div class="pricing-buttons" id="contact-button">
+                        <button class="pricing-readmore">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon-right arrow"></span>
+                            </span>
+                            <span class="button-text">REACH OUT</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Contact Two Columns -->
+                <div class="contact-flex">
+                    <!-- Contact Section Column One -->
+                    <article class="contact-column1">
+                        <span class="pretitle">Catch Up</span>
+                        <h2>Our Physical Address</h2>
+                        <p id="contact-note">
+                            When visiting for the first time in person, use the blue gate so that you can get a  
+                            <strong>FREE</strong> gift card and a coupon that qualifies you for <strong>30%</strong> 
+                            discount on your third purchase.
+                        </p>
+                        <p><strong>Address</strong>: 155 Diamond Suite, Gem Block, Bel Astoria</p>
+                        <p><strong>Phone</strong>: (+000) 555-345-X | Toll-free</p>
+                        <p><strong>Email</strong>: <a href="mailto:general@onepge.op" target="_blank">general@onepge.op</a></p>
+                        <!-- Map Location -->
+                        <figure>
+                            <img src="img/office.jpg" width="1200" height="597" alt="Office Image" title="Display Your Office Building Here">
+                            <figcaption>
+                                Office Campus 
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <!-- Contact Section Column Two -->
+                    <article class="contact-column2">
+                        <span class="pretitle">Bring the Messages On</span>
+                        <h2>Contact Us</h2>
+                        <!-- Contact Form -->
+                        <div class="contact-form">
+                            <form>
+                                <label for="fname">Name</label>
+                                <input type="text" id="fname" name="fullname" placeholder="Full Name">
+                          
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="emailaddress" placeholder="Email Address">
+                          
+                                <label for="subject">Subject Category</label>
+                                <select id="subject" name="subject">
+                                    <option value="service">Service</option>
+                                    <option value="product">Product</option>
+                                    <option value="other">Other</option>
+                                </select>
+
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Write message here..." style="height:200px"></textarea>
+
+                                <input type="submit" value="SUBMIT">
+                            </form>
+                        </div> 
+                    </article>
+                </div>
+            </section>
+            <!-- To Top Button -->
+            <div id="to-top">
+                <button class="to-top" onclick="window.location.href='#home';">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 	fill="none" class="bi bi-arrow-up" viewBox="0 0 16 16"> 
+                    <path d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/> </svg>
+                    <br>
+                      <span>T <br> O <br> P </span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <!-- Highlights -->
+            <div class="highlights">
+                <h3>SITE HIGHLIGHTS</h3>
+                <hr>
+                <ul>
+                    <li>Design is Mobile First</li>
+                    <li>Website is Responsive</li>
+                    <li>Header and logo change on scroll. However, only when screen size is 1024px and above</li>
+                    <li>Menu items are highlighted on scroll</li>
+                    <li>Buttons have special effects. Including the "Learn More", "Read More", "Reach Out", and 
+                        back to "Top" buttons/texts. </li>
+                    <li>Hover over a team member's picture to reveal animated effects</li>
+                    <li>Website is accessible, inclusive, and usable.</li>
+                    <li>Codes are validated with <a href="https://www.w3.org/" target="_blank">W3C</a>'s 
+                        validators (<a href="https://validator.w3.org/" target="_blank">HTML</a>, 
+                        <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS</a>). 
+                    </li>
+                </ul>
+            </div>
+            <!-- Partners -->
+            <div class="partners">
+                <h3>ONEPAGE PARTNERS</h3>
+                <hr>
+                <ul>
+                    <li>The International Community</li>
+                    <li>Global Community of Internationals</li>
+                    <li>The Business Global International </li>
+                    <li>Global People of Earth</li>
+                    <li>Planet of Earth Worldwide</li>
+                </ul>
+            </div>
+            <!-- Largest Market -->
+            <div class="market">
+                <h3>ONEPAGE LARGEST MARKET</h3>
+                <hr>
+                <ul>
+                    <li>Africa</li>
+                    <li>Asia</li>
+                    <li>Australia</li>
+                    <li>Europe</li>
+                    <li>North America</li>
+                    <li>South America</li>
+                </ul>
+            </div>
+            <!-- Disclaimer -->
+            <div class="disclaimer">
+                <h3>DISCLAIMER</h3>
+                <hr>
+                <p>
+                    The concept of OnePage as portrayed in this website is 100% fictitious. Any form of resemblance between 
+                    any element or part of this website and a real life company, thing, or person is 100% unintentional. 
+                    This website is a result of personal practice, and the name OnePage was derived from 
+                    the single-page layout of the website.
+                </p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
