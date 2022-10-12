@@ -348,11 +348,13 @@ header #column-two {
 }
 
 /* SLIDER TEXT RESPONSIVE */
-@media only screen and (min-width: 478px) {
-    /* .text-three {
-        display: none;
-    } */
+@media only screen and (max-width: 477px) {
+    .text-three {
+        font-size: 0.75rem;
+    }
+}
 
+@media only screen and (min-width: 478px) {
     .slider-image img {
         height: auto;
         min-height: 270px;
@@ -1276,14 +1278,14 @@ transition: all 0.475s;
 }
 
 @keyframes autoplay3 {
-    0% {margin-top: 20em;}
+    0% {margin-top: 25em;}
     4% {margin-top: 0em;}
     31% {margin-top: 0em;}
-    35% {margin-top: -20em;}
-    64% {margin-top: -20em;}
-    68% {margin-top: -40em;}
-    96% {margin-top: -40em;}
-    100% {margin-top: -60em;}
+    35% {margin-top: -25em;}
+    64% {margin-top: -25em;}
+    68% {margin-top: -50em;}
+    96% {margin-top: -50em;}
+    100% {margin-top: -70em;}
 }
 
 /* Testimonal Responsive */
