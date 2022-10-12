@@ -7,7 +7,7 @@
     <hr>
     <ul>
         <li>Design is Mobile First.</li>
-        <li>Website is Responsive.</li>
+        <li>Website is responsive.</li>
         <li>Header and logo change on scroll. However, only when screen size is 1024 pixels wide and above.</li>
         <li>Menu items are highlighted on scroll when minimum screen width is 1024 pixels.</li>
         <li>Buttons have special effects. Including the "Learn More", "Read More", "Reach Out", and 
