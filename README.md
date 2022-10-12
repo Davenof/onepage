@@ -8,8 +8,8 @@
     <ul>
         <li>Design is Mobile First.</li>
         <li>Website is Responsive.</li>
-        <li>Header and logo change on scroll. However, only when screen size is 1024px and above.</li>
-        <li>Menu items are highlighted on scroll.</li>
+        <li>Header and logo change on scroll. However, only when screen size is 1024 pixels wide and above.</li>
+        <li>Menu items are highlighted on scroll when minimum screen width is 1024 pixels.</li>
         <li>Buttons have special effects. Including the "Learn More", "Read More", "Reach Out", and 
             back to "Top" buttons/texts. </li>
         <li>Hover over a team member's picture to reveal animated effects.</li>
