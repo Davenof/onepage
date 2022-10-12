@@ -1,5 +1,8 @@
 # onepage
-<div class="highlights">
+<p>
+    This website project was done with HTML 5, CSS, and JavaScript.
+</p>
+<div>
     <h3>WEBSITE'S HIGHLIGHTS</h3>
     <hr>
     <ul>
